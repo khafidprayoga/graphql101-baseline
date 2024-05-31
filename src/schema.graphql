@@ -1,0 +1,36 @@
+"""
+Merupakan entitas dari sebuah buku, yang akan kita pakai untuk menyimpan data
+"""
+type Book {
+  id: ID!
+  title: String!
+  description: String
+  author: String!
+  totalPage: Int!
+  releaseYear: Int!
+  isbn: String
+}
+
+input CreateBook {
+  title: String!
+  description: String
+  author: String!
+  totalPage: Int!
+  releaseYear: Int!
+  isbn: String
+}
+
+type Books {
+  books: [Book]!
+  count: Int
+}
+
+type Query {
+  books: Books
+  book(id: ID!): Book
+}
+
+type Mutation {
+  createBook(book: CreateBook!): Book!
+  deleteBook(id: ID!): Boolean
+}

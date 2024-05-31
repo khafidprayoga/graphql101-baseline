@@ -1,0 +1,21 @@
+{
+  "name": "graphql101-baseline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "@graphql-tools/load": "^8.0.2",
+    "@graphql-tools/load-files": "^7.0.0"
+  }
+}
