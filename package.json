@@ -10,12 +10,14 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@graphql-tools/load": "^8.0.2",
+    "@graphql-tools/load-files": "^7.0.0",
+    "@graphql-tools/mock": "^9.0.3",
+    "@graphql-tools/schema": "^10.0.4",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@apollo/server": "^4.10.4",
-    "@graphql-tools/load": "^8.0.2",
-    "@graphql-tools/load-files": "^7.0.0"
+    "@apollo/server": "^4.10.4"
   }
 }
