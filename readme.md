@@ -4,9 +4,9 @@ Lab  GraphQL101-Baseline series
 
 ## Version
 
-Node v20.13.1
-npm 10.5.2
-typescript 5.4.5
+Node v20.13.1  
+npm 10.5.2  
+typescript 5.4.5  
 
 ## Running
 
