@@ -14,5 +14,5 @@ typescript 5.4.5
   `npm install`
 2. Start Server
    `npm run dev`
-3. Add mock data [TODO]
+3. Add mock data [DONE]
 4. Implement resolver [TODO]
