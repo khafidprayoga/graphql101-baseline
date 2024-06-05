@@ -1,4 +1,5 @@
-import { faker } from "@faker-js/faker";
+import * as fs from "fs";
+import * as path from "path";
 
 interface Book {
   id: string;
@@ -23,24 +24,10 @@ type _getBooksResult = {
 export class StoreDataSource {
   private books: Book[] = [];
   constructor() {
-    for (let i = 0; i < 10; i++) {
-      this.books.push({
-        id: faker.string.uuid(),
-        title: faker.lorem.words(3),
-        description: faker.lorem.sentences(1),
-        author: faker.person.fullName(),
-        totalPage: faker.number.int({ min: 100, max: 500 }),
-        releaseYear: faker.date
-          .past({
-            years: 10,
-          })
-          .getFullYear(),
-        isbn: faker.string.numeric(10),
-      });
-    }
-
-    let debug = JSON.stringify(this.books, null, 2);
-    console.log(debug);
+    const location = path.join(__dirname, "books.json");
+    const data = fs.readFileSync(location, "utf-8");
+    this.books = JSON.parse(data);
+    console.log("seed books data succeed");
   }
 
   addBook(book: Book): Book {
