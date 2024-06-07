@@ -1,32 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-
-export interface Book {
-  id: string;
-  title: string;
-  description: string;
-  authorId: string;
-  author: Author;
-  totalPage: number;
-  releaseYear: number;
-  isbn: String;
-}
-
-export interface Author {
-  id: string;
-  fullName: string;
-}
-
-export type getBooksPagination = {
-  page: number;
-  size: number;
-  authorId?: string;
-};
-
-type _getBooksResult = {
-  books: Book[];
-  count: number;
-};
+import { Author, Book, getBooksPagination, _getBooksResult } from "./types";
 
 export class AuthorDataSource {
   private authors: Author[] = [];

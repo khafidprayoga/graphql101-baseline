@@ -2,7 +2,8 @@ import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { loadFiles } from "@graphql-tools/load-files";
 import { makeExecutableSchema } from "@graphql-tools/schema";
-import { StoreDataSource, AuthorDataSource, getBooksPagination } from "./store";
+import { StoreDataSource, AuthorDataSource } from "./store";
+import { getBooksPagination } from "./types";
 
 const store = new StoreDataSource();
 const authorStore = new AuthorDataSource();
