@@ -5,7 +5,8 @@ type Book {
   id: ID!
   title: String!
   description: String
-  author: String!
+  authorId: String!
+  author: Author
   totalPage: Int!
   releaseYear: Int!
   isbn: String
@@ -25,8 +26,13 @@ type Books {
   count: Int
 }
 
+type Author {
+  id: ID!
+  fullName: String
+}
+
 type Query {
-  books: Books
+  books(page: Int, size: Int, authorId: String): Books
   book(id: ID!): Book
 }
 

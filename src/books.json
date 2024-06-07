@@ -3,90 +3,90 @@
     "id": "bbb33610-688d-4cbe-b4b2-d384facb66be",
     "title": "id vitiosus undique",
     "description": "Veritas demergo rem contigo canis amiculum thalassinus tergum.",
-    "author": "Carroll Hane",
     "totalPage": 200,
     "releaseYear": 2016,
-    "isbn": "0154423991"
+    "isbn": "0154423991",
+    "authorId": "author1"
   },
   {
     "id": "0530d151-4f4c-42bc-a222-1672c7486d6b",
     "title": "creo vulnus aiunt",
     "description": "Amitto sophismata tonsor voluptatibus tolero.",
-    "author": "Christie Homenick",
     "totalPage": 382,
     "releaseYear": 2016,
-    "isbn": "7241078536"
+    "isbn": "7241078536",
+    "authorId": ""
   },
   {
     "id": "1df61844-3501-4d57-a4a3-ccaba31ce6d7",
     "title": "aliquid accommodo arbor",
     "description": "Quibusdam cometes sol sono spectaculum voluptatibus depraedor adhuc ciminatio.",
-    "author": "Alicia Lind",
     "totalPage": 206,
     "releaseYear": 2019,
-    "isbn": "6833155397"
+    "isbn": "6833155397",
+    "authorId": "author1"
   },
   {
     "id": "73cd6eb7-e6ba-424f-99d9-b581a90ad400",
     "title": "ventus accedo vere",
     "description": "Curtus curatio spiritus impedit urbanus solio videlicet aedificium thymum deprimo.",
-    "author": "Darla Haley-Klocko",
     "totalPage": 387,
     "releaseYear": 2020,
-    "isbn": "7359799936"
+    "isbn": "7359799936",
+    "authorId": "author1"
   },
   {
     "id": "6ade7e57-e1e5-47b5-a275-9094b43dbec5",
     "title": "crebro quaerat deorsum",
     "description": "Adsum utique ut confido civis inventore coerceo.",
-    "author": "Sue Mueller",
     "totalPage": 131,
     "releaseYear": 2021,
-    "isbn": "1014175650"
+    "isbn": "1014175650",
+    "authorId": "author1"
   },
   {
     "id": "cd23bfb3-9661-49cb-bc3e-3ebf3433e473",
     "title": "caries deserunt aestivus",
     "description": "Cupiditate credo alter sui defungo cattus arbor saepe.",
-    "author": "Hugo Hand",
     "totalPage": 157,
     "releaseYear": 2021,
-    "isbn": "3501587089"
+    "isbn": "3501587089",
+    "authorId": "author1"
   },
   {
     "id": "0bfa3173-87a1-4d72-a491-aab1a31532a0",
     "title": "deporto vorax sordeo",
     "description": "Accedo tutis arma capillus cuppedia.",
-    "author": "Katherine Hessel",
     "totalPage": 194,
     "releaseYear": 2017,
-    "isbn": "8170659738"
+    "isbn": "8170659738",
+    "authorId": "author2"
   },
   {
     "id": "d1ff7c84-691e-48ba-a05f-cf880f0beb8f",
     "title": "delicate patruus a",
     "description": "Illo demitto canis delectus dolore ea aegre calcar colligo sophismata.",
-    "author": "Brandon Kohler",
     "totalPage": 256,
     "releaseYear": 2020,
-    "isbn": "1435113627"
+    "isbn": "1435113627",
+    "authorId": "author2"
   },
   {
     "id": "03e71bf3-6892-4830-9854-1b22d6a5e91d",
     "title": "acsi terminatio numquam",
     "description": "Antiquus temporibus tutis.",
-    "author": "Jeffery Metz",
     "totalPage": 448,
     "releaseYear": 2023,
-    "isbn": "1527065133"
+    "isbn": "1527065133",
+    "authorId": "author2"
   },
   {
     "id": "c182c401-8335-4e2a-be41-8935a6ae58ce",
     "title": "admiratio carpo victoria",
     "description": "Socius thesaurus basium crepusculum allatus vetus.",
-    "author": "Marcos Altenwerth",
     "totalPage": 388,
     "releaseYear": 2017,
-    "isbn": "7383249472"
+    "isbn": "7383249472",
+    "authorId": "author2"
   }
 ]
