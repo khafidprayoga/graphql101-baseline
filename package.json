@@ -16,6 +16,7 @@
     "@graphql-tools/load-files": "^7.0.0",
     "@graphql-tools/mock": "^9.0.3",
     "@graphql-tools/schema": "^10.0.4",
+    "dataloader": "^2.2.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.5"
   },

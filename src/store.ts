@@ -20,6 +20,10 @@ export class AuthorDataSource {
 
     return author;
   }
+
+  getAuthors(): Author[] {
+    return this.authors;
+  }
 }
 
 export class StoreDataSource {
