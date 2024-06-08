@@ -1,3 +1,5 @@
+import * as DataLoader from "dataloader";
+
 export interface Book {
   id: string;
   title: string;
@@ -23,4 +25,8 @@ export type getBooksPagination = {
 export type _getBooksResult = {
   books: Book[];
   count: number;
+};
+
+export type ServerContext = {
+  authorLoader: DataLoader<string, Author | null>;
 };

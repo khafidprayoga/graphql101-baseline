@@ -3,7 +3,7 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 import { loadFiles } from "@graphql-tools/load-files";
 import { makeExecutableSchema } from "@graphql-tools/schema";
 import { StoreDataSource, AuthorDataSource } from "./store";
-import { getBooksPagination } from "./types";
+import { getBooksPagination, ServerContext } from "./types";
 import * as DataLoader from "dataloader";
 
 const store = new StoreDataSource();
@@ -27,9 +27,12 @@ const resolvers = {
     },
   },
   Book: {
-    author(parent, args, ctx, info) {
-      return ctx.authorLoader.load(parent.authorId);
-      // return authorStore.getAuthor(parent.authorId);
+    async author(parent, args, ctx: ServerContext, info) {
+      // without
+      // const data = await authorStore.getAuthor(parent.authorId);
+      // with data loader cache
+      const data = await ctx.authorLoader.load(parent.authorId);
+      return data;
     },
   },
 };
@@ -47,16 +50,10 @@ async function bootstrap() {
   const { url } = await startStandaloneServer(server, {
     context: async ({ req, res }) => ({
       authorLoader: new DataLoader(async (keys) => {
-        const authorList = authorStore.getAuthors();
-        const authorKV = new Map();
-
-        authorList.forEach((author) => {
-          authorKV.set(author.id, author);
-        });
-
-        return keys.map((key) => {
-          authorKV.get(key) || null;
-        });
+        const author = authorStore.getAuthors();
+        return keys.map(
+          (key) => author.find((author) => author.id === key) || null
+        );
       }),
     }),
   });

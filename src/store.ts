@@ -11,12 +11,15 @@ export class AuthorDataSource {
     console.log("seed authors data succeed");
   }
 
-  getAuthor(authorId: string): Author | null {
+  async getAuthor(authorId: string): Promise<Author | null> {
     const author =
       this.authors.find((author) => author.id === authorId) || null;
     if (author !== null) {
       console.log("get author by id", authorId, author);
     }
+
+    // blocking: simulate network delay
+    await new Promise((resolve) => setTimeout(resolve, 5000));
 
     return author;
   }
